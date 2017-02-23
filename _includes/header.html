@@ -1,0 +1,12 @@
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" href="{{ "/" | relative_url}}">
+	{% if site.title %}
+    {{ site.title | escape }}</a>
+    {% endif %}
+    {% include navigation.html %}
+  </div>
+</header>
