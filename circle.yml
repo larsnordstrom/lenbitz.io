@@ -8,6 +8,8 @@ machine:
 
 dependencies:
   pre:
+    - bundle install jekyll bundler
+  post:
     - bundle exec jekyll build
 
 test:
