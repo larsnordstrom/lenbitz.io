@@ -5,10 +5,14 @@ machine:
     USER_NAME: larsnordstrom
     USER_EMAIL: lars.nordstrom@jgy.se
     NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+    JEKYLL_ENV: production
+    RUBY_ENV: production
 
 dependencies:
+  pre:
+    - gem install jekyll
   post:
-    - bundle exec jekyll build
+    - bundle exec jekyll build --trace
 
 test:
   post:
