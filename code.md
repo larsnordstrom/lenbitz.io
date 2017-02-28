@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CODE
+title: Code
 navigation_weight: 3
 permalink: "/code"
 ---

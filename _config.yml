@@ -28,6 +28,20 @@ social-links:
     github_username:  larsnordstrom
     bitbucket_username: lano78
     instagram_username: LenbitzFPV
+    facebook: lano78
+    linkedin: lano78
+    youtube_username: lenbitzfpv
+
+
+links:
+  twitter: https://twitter.com/
+  instagram: https://instagram.com/
+  github: https://github.com/
+  bitbucket: https://bitbucket.org/
+  facebook: https://facebook.com/
+  youtube: https://www.youtube.com/channel/UC1Q8cPbQ15DgUxZ_Ismbp_w/videos
+  linkedin: https://se.linkedin.com/in/
+
 #
 analytics:
     google: 00000
@@ -36,6 +50,8 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -43,11 +59,16 @@ exclude:
   - build.bat
   - .htaccess
   - .gitignore
+  - travis.yml
+  - circle.yml
 #
 sass:
     style: compressed
+    sass_dir: _sass
 #
 scripts:
-  #- smooth-scroll
+  - smooth-scroll
+  - jquery
+  - mathjax
 #
 #include: [.htaccess]

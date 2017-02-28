@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: BLOG
+title: Blog
 navigation_weight: 2
 permalink: "/blog"
 ---

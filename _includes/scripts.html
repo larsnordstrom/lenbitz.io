@@ -1,0 +1,16 @@
+{% if site.scripts.jquery %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+{% endif %}
+{% if site.scripts.mathjax %}
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}
+<script type="text/javascript" src="{{ "/assets/main.js" | relative_url }}"></script>
+{% if site.scripts.smooth-scroll %}
+<script type="text/javascript" src="{{ "/assets/smooth-scroll.js" | relative_url }}"></script>
+<script>
+  smoothScroll.init();
+</script>
+{% endif %}
+{% if jekyll.environment == "production" and site.google.analytics %}
+{% include google.html %}
+{% endif %}

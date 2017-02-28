@@ -1,6 +1,6 @@
 ---
 layout: fpv
-title: FPV
+title: Fpv
 navigation_weight: 4
 permalink: "/fpv"
 ---
