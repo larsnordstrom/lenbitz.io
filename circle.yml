@@ -10,7 +10,7 @@ machine:
 
 dependencies:
   pre:
-    - gem install jekyll
+    - gem install jekyll bundler
   post:
     - bundle exec jekyll build --trace
 
